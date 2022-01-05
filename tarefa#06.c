@@ -29,6 +29,8 @@ void imprimirmatriz(int mat[9][9],int li, int co)
         }
         return ;
 }
+void desaloca() ;
+
 int main ()
 {
     int i = 9 , j = 9 ;
@@ -41,4 +43,15 @@ int main ()
     lermatriz(mat, i , j) ;
     imprimirmatriz(mat, i, j) ;
     return 0 ;
+}
+
+void desaloca (int **P, int linhas )
+{
+  int aux ; 
+    for (aux = 0 ; aux < linhas ; aux ++)
+    {
+      free (P[aux]) ;
+    } 
+
+    free (P) ;
 }
