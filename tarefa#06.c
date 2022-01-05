@@ -42,6 +42,7 @@ int main ()
     }
     lermatriz(mat, i , j) ;
     imprimirmatriz(mat, i, j) ;
+    desaloca(P, i) ;
     return 0 ;
 }
 
