@@ -184,7 +184,7 @@ void sudoku (int matriz[9][9], int nmat)
 
         }else
 
-            printf ("NÂO\n") ;
+            printf ("NAO\n") ;
 
 
 
