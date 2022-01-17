@@ -202,7 +202,9 @@ int main ()
 
     int nmatrix ;
 
-    scanf ("%d", &nmatrix) ;
+    do{
+            scanf ("%d", &nmatrix) ;
+    }while(nmatrix <= 0) ;
 
     int mat [9][9] ;
 
