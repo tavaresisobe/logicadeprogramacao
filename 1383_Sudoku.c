@@ -8,7 +8,7 @@ void sudoku (int matriz[9][9], int nmat)
 
     int i, j, sum = 0, x = 0, k = 0, sumC = 0, sumL = 0, jogadores ;
 
-    printf ("%d\n", nmat) ;
+ // printf ("%d\n", nmat) ;
 
     for (jogadores = 1 ; jogadores <= nmat ; jogadores++)
 
