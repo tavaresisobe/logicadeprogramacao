@@ -201,7 +201,7 @@ int main ()
 {
 
     int nmatrix ;
-
+    //laço para verificar se o numero de jogadores e consequentemente matrizes a serem lidas será positivo
     do{
             scanf ("%d", &nmatrix) ;
     }while(nmatrix <= 0) ;
