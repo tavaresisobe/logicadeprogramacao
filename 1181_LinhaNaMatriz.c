@@ -21,14 +21,14 @@ int main ()
                 }
             }
         }
- //    for (i = 0 ; i < 12 ; i ++)
-   //  {
-     //   for (j = 0 ; j < 12 ; j++)
-       // {
-         //      printf ("%lf ", matriz[i][j]) ;
-       // }
-      //printf ("\n") ;
-    // }
+ /*    for (i = 0 ; i < 12 ; i ++)
+     {
+        for (j = 0 ; j < 12 ; j++)
+        {
+               printf ("%lf ", matriz[i][j]) ;
+        }
+      printf ("\n") ;
+     }  */ 
             
      if(operacao == 'S')
         {
