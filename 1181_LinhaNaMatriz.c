@@ -13,7 +13,7 @@ int main ()
         {
             for (j = 0 ; j < 12 ; j++)
             {
-               matriz[i][j] = rand() % 10 ;
+              scanf ("%lf", &matriz[i][j]) ;
             
                 if (linha == i)
                 {
