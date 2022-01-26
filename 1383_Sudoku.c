@@ -57,24 +57,20 @@ void sudoku (int matriz[9][9], int nmat)
         }
     }
     //checar quadrados:
-    for ( linhaGrade = 0; linhaGrade < 3; linhaGrade++)
-        {
-            for (colunaGrade = 0 ; colunaGrade < 3 ; colunaGrade++)
-            {
-                //Estamos conferindo aqui, entao é aqui que resetamos a soma pra 0, porque estamos em outra matriz 3 por 3
-                sum = 0;
-                for (i = 0 ; i < 3 ; i++)
-                {
-                    for (j = 0 ; j < 3 ; j++)
-                    {
-                        sum = sum + matriz[linhaGrade * 3 + i][colunaGrade * 3 + j] ;
-                    }
-                }
-                //Conferir se teve repeticao:
-                if (sum != 45) 
-                    count = 1 ; 
-            }
-        }
+    for(i = 2 ; i < 9 && !count ; i += 3)
+    {
+	      	memset(vetor, 0, sizeof(vetor)) ;
+	      	for(j = i - 2 ; j <= i && !count ; j++)
+	      	{
+	    		for(k = i - 2; k <= i && !count ; k++)
+	    		{
+	      			if(vetor[matriz[j][k]])
+	        			count = 1 ;
+	      			else
+	        			vetor[matriz[j][k]] = 1 ;
+	    		}
+	      	}
+	 }
         printf("Instancia %d\n", jogadores) ;
         if (count == 0)
         {
