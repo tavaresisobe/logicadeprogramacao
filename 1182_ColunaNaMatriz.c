@@ -13,7 +13,7 @@ int main ()
         for (j = 0 ; j < 12 ; j++)
         {
             scanf ("%lf", &mat[i][j]) ; 
-                if (j == c)
+                if (c == j)
                 {
                     guarda += mat[i][j] ;
                 }
