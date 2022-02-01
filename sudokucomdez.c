@@ -1,10 +1,7 @@
 #include <stdio.h>
-
 #include <stdlib.h>
 
-
 void sudoku (int nmat)
-
 {
     int instancias;
     int mat[9][9];
@@ -48,6 +45,7 @@ void sudoku (int nmat)
                 
                 for (k = 1 ; k <= 10 ; k++)
                     if (q[k] > 1) count = 1 ;
+                }
             }
         }        
         printf ("Instancia %d\n", instancias) ;
