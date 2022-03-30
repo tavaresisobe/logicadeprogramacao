@@ -4,7 +4,7 @@ preencher a matriz com números aleatórios e para imprimir a matriz na tela*/
 #include<stdio.h>
 #include <stdlib.h>
 
-void lermatriz(int mat[9][9], int l, int c)
+void lermatriz(int mat[9][9], int l, int c) //lendo a matriz
 {
     int i, j ;
     for (i = 0 ; i < l ; i ++)
@@ -16,7 +16,7 @@ void lermatriz(int mat[9][9], int l, int c)
     }
     return ;
 }
-void imprimirmatriz(int mat[9][9],int li, int co)
+void imprimirmatriz(int mat[9][9],int li, int co) //imprimindo a matriz ;)
 {
     int b, c ;
         for (b = 0 ; b < li ; b++)
@@ -35,7 +35,7 @@ int main ()
 {
     int i = 9 , j = 9 ;
     int mat[i][j] ;
-    int **P =  (int**) malloc (sizeof (int* )*9) ;
+    int **P =  (int**) malloc (sizeof (int* )*9) ; //alocando...
     for (int a = 0 ; a < 9 ; a++)
     {
         P[a] = (int*)malloc (sizeof (int)*9);
@@ -46,7 +46,7 @@ int main ()
     return 0 ;
 }
 
-void desaloca (int **P, int linhas )
+void desaloca (int **P, int linhas )  //desalocando
 {
   int aux ; 
     for (aux = 0 ; aux < linhas ; aux ++)
